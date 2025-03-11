@@ -1,0 +1,40 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+}
+
+#webname {
+    color: white;
+    background-color: #92ad70;
+}
+
+nav a {
+    text-decoration: none;
+    color: #92ad70;
+    margin-right: 15px;
+}
+
+th {
+    padding: 12px 0;
+    background-color: #92ad70;
+    color: white;
+    width: fit-content;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
