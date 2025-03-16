@@ -87,9 +87,4 @@ function greetingFunc()
         = "Good night, I am Ethan Tao";
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    //didn't work at first since first page is "/", not index, so added second part of if-statement
-    if (window.location.href.includes("index.html") || window.location.pathname === "/") {
-        greetingFunc();
-    }
-});
+greetingFunc();
