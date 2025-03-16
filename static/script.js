@@ -87,11 +87,9 @@ function greetingFunc()
         = "Good night, I am Ethan Tao";
 }
 
-window.onload = function () {
-    //wouldn't work initially, so I added second part of 
-    // if-statement since index is the default, aka "/"
-    if (window.location.href.includes("index.html") 
-        || window.location.pathname === "/") {
+document.addEventListener("DOMContentLoaded", function () {
+    //didn't work at first since first page is "/", not index, so added second part of if-statement
+    if (window.location.href.includes("index.html") || window.location.pathname === "/") {
         greetingFunc();
     }
-};
+});
