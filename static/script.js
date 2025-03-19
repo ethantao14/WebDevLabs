@@ -60,8 +60,8 @@ function findTheBanana(str)
     }
 }
 
-L1.forEach(findTheBanana);
-L2.forEach(findTheBanana);
+//L1.forEach(findTheBanana);
+//L2.forEach(findTheBanana);
 
 function greetingFunc()
 {
@@ -88,3 +88,63 @@ function greetingFunc()
 }
 
 greetingFunc();
+
+function addYear()
+{
+    var d = new Date();
+    var y = d.getFullYear();
+
+    document.getElementById("copyYear").innerHTML += " " + y;
+}
+
+function showList()
+{
+    document.getElementById("hobbiesList").style.display = "block";
+    document.getElementById("viewButton").style.display = "none";
+}
+
+$(document).ready(function(){
+    $("#long-bio, #read-less").hide();
+  
+    $("#read-more").click(function(){
+      $("#long-bio").slideDown();
+      $("#read-more").hide();
+      $("#read-less").show();
+    });
+  
+    $("#read-less").click(function(){
+      $("#long-bio").slideUp();
+      $("#read-less").hide();
+      $("#read-more").show();
+    });
+  });
+  
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const messageInput = document.getElementById("comment");
+    const form = document.getElementById("contactForm");
+    function validateName() {
+      if (!nameInput.checkValidity()) {
+        console.log("Please enter your name.");
+        return false;
+      }
+      return true;
+    }
+    function validateEmail() {
+      if (!emailInput.checkValidity()) {
+        //console.log("Please enter a valid email address.");
+        document.getElementById("feedback").innerHTML = "Please enter a valid email address.";
+        return false;
+      }
+      return true;
+    }
+    function validateMessage() {
+      if (!messageInput.checkValidity()) {
+        console.log("Please enter your message.");
+        return false;
+      }
+      return true;
+    }
+})

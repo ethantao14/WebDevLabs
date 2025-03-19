@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Ethan Tao</h1>
         <nav>
@@ -30,9 +31,15 @@
             Hello, my name is Ethan Tao. I am a freshman and am majoring in business. 
             I love playing soccer, hanging out with friends, and eating good food!
         </p>
+        <p id="long-bio">
+            I am proud to be a Morewood Gardens resident! My favorite places to get food
+            are Revolution Noodles, Shake Smart, Hunan Express, Stack'd, and Wild Blue.
+        </p>
+        <button id="read-more">Read More</button>
+        <button id="read-less">Read Less</button>
     </div>
     <footer>
-        &copy; Copyright 2025. All Rights Reserved. Designed and Coded by Ethan Tao.
+        <p id="copyYear">&copy; All Rights Reserved. Designed and Coded by Ethan Tao.</p>
     </footer>
 </body>
 </html>

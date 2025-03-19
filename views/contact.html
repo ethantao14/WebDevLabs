@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../static/script.js" defer></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Ethan Tao</h1>
         <nav>
@@ -25,9 +25,10 @@
     </header>
     <div class="main">
         <h2>Contact Me</h2>
-        <form>
+        <form id="contactForm">
+            <p id="feedback"></p>
             <label for="name">Your name (required)</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name">
 
             <label for="email">Your email</label>
             <input type="email" id="email" name="email">
@@ -58,7 +59,7 @@
         </table>
     </div>
     <footer>
-        &copy; Copyright 2025. All Rights Reserved.
+        <p id="copyYear">&copy; All Rights Reserved. Designed and Coded by Ethan Tao.</p>
     </footer>
 </body>
 </html>

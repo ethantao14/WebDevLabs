@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../static/script.js" defer></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Ethan Tao</h1>
         <nav>
@@ -25,7 +25,8 @@
     </header>
     <div class="main">
         <h2>Things I love to do for fun</h2>
-        <ul>
+        <button id="viewButton" onclick="showList()">Click to see...</button>
+        <ul id="hobbiesList">
             <li>Soccer</li>
             <li>Basketball</li>
             <li>Card Magic</li>
@@ -34,7 +35,7 @@
         </ul>
     </div>
     <footer>
-        &copy; Copyright 2025. All Rights Reserved.
+        <p id="copyYear">&copy; All Rights Reserved. Designed and Coded by Ethan Tao.</p>
     </footer>
 </body>
 </html>
