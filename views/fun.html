@@ -23,16 +23,33 @@
             <a href="contact.html">Contact me</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <button id="viewButton" onclick="showList()">Click to see...</button>
-        <ul id="hobbiesList">
-            <li>Soccer</li>
-            <li>Basketball</li>
-            <li>Card Magic</li>
-            <li>Video Games</li>
-            <li>Netflix</li>
-        </ul>
+    <div class="mainLayout">
+        <!-- <button id="viewButton" onclick="showList()">Click to see...</button> -->
+        <div id="item1">
+            <h2>Things I love to do for fun</h2>
+            <ul id="hobbiesList">
+                <li>Soccer</li>
+                <li>Basketball</li>
+                <li>Card Magic</li>
+                <li>Video Games</li>
+                <li>Netflix</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img src="../static/messiImage.jpg" class="funIMG" alt="Messi Picture">
+        </div>
+        <div id="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ht1wQJTpNAA?si=2SKpqDrcarRRz8C8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">
+                    Click the button the get a random piece of advice!
+                </p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
     </div>
     <footer>
         <p id="copyYear">&copy; All Rights Reserved. Designed and Coded by Ethan Tao.</p>

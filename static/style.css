@@ -37,6 +37,55 @@ form * {
     text-align: center;
 }
 
-#hobbiesList {
+/* #hobbiesList {
     display: none;
+} */
+
+.funIMG {
+    border-radius: 100%;
+}
+
+iframe {
+    border: 5px solid #92ad70;
+    border-radius: 5px;
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+}
+
+.container {
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 10px 5px 5px #92ad70;
+}
+
+button {
+    background-color: #92ad70;
+    color: white;
+    border: 2px solid #92ad70;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7a9f60;
+    border-color: #7a9f60;
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mainLayout > * {
+    flex: 1 1 300px;
 }
